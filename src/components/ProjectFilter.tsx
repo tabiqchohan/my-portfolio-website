@@ -8,11 +8,7 @@ interface ProjectFilterProps {
   onSelect: (id: string) => void;
 }
 
-export default function ProjectFilter({
-  categories,
-  active,
-  onSelect,
-}: ProjectFilterProps) {
+export default function ProjectFilter({ categories, active, onSelect }: ProjectFilterProps) {
   return (
     <div className="flex flex-wrap gap-2">
       {categories.map((cat) => (
@@ -24,7 +20,7 @@ export default function ProjectFilter({
           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
             active === cat.id
               ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
-              : "bg-white/80 dark:bg-white/[0.04] text-stone-600 dark:text-stone-400 border border-stone-200 dark:border-stone-800 hover:border-indigo-300 dark:hover:border-indigo-700"
+              : "bg-white/90 dark:bg-slate-900/50 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-300 dark:hover:border-indigo-700"
           }`}
         >
           {cat.label}

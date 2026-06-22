@@ -8,10 +8,10 @@ export default function AboutPage() {
     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <ScrollReveal>
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-4xl font-bold text-stone-900 dark:text-white">
+          <h1 className="text-4xl font-bold text-slate-900 dark:text-white">
             About Me
           </h1>
-          <p className="mt-4 text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+          <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
             I&apos;m a passionate {siteConfig.role} based in{" "}
             {siteConfig.location}. Currently studying at GIAIC (Governor
             Initiative for AI Computing) and founder of{" "}
@@ -41,7 +41,7 @@ export default function AboutPage() {
 
       <ScrollReveal delay={0.2}>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8 text-center">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">
             Experience &amp; Education
           </h2>
           <Timeline />

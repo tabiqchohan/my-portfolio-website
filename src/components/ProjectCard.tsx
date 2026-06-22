@@ -11,10 +11,10 @@ export default function ProjectCard({ project }: { project: Project }) {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="group relative rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] p-6 hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-200 dark:hover:border-indigo-800 transition-all duration-300"
+      className="group relative rounded-2xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 p-6 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-300"
     >
       <div className="flex items-start justify-between mb-3">
-        <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
+        <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
           {project.title}
         </h3>
         <div className="flex gap-2">
@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
               aria-label="GitHub"
             >
               <FiGithub size={16} />
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
               aria-label="Live site"
             >
               <FiExternalLink size={16} />
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
+      <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
         {project.description}
       </p>
 
@@ -51,7 +51,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.techStack.map((tech) => (
           <span
             key={tech}
-            className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300"
+            className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300"
           >
             {tech}
           </span>
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {project.featured && (
-        <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-sm">
+        <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-sm">
           Featured
         </span>
       )}

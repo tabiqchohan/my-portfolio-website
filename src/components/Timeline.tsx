@@ -1,11 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  FiBriefcase,
-  FiBookOpen,
-  FiAward,
-} from "react-icons/fi";
+import { FiBriefcase, FiBookOpen, FiAward } from "react-icons/fi";
 import { experiences } from "@/data/experience";
 
 const typeIcons = {
@@ -15,11 +11,9 @@ const typeIcons = {
 };
 
 const typeColors = {
-  work: "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400",
-  education:
-    "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400",
-  certification:
-    "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400",
+  work: "bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400",
+  education: "bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400",
+  certification: "bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400",
 };
 
 export default function Timeline() {
@@ -45,19 +39,19 @@ export default function Timeline() {
                 <Icon size={16} />
               </div>
 
-              <div className="bg-white/80 dark:bg-white/[0.04] border border-stone-200 dark:border-stone-800 rounded-xl p-5 hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300">
+              <div className="bg-white/90 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700/50 rounded-xl p-5 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                  <h3 className="font-semibold text-stone-900 dark:text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <span className="text-xs text-stone-500 dark:text-stone-400 shrink-0">
+                  <span className="text-xs text-slate-500 dark:text-slate-400 shrink-0">
                     {exp.startDate} — {exp.endDate}
                   </span>
                 </div>
-                <p className="text-sm text-stone-600 dark:text-stone-400 mb-2">
+                <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
                   {exp.organization} &middot; {exp.location}
                 </p>
-                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                   {exp.description}
                 </p>
               </div>
