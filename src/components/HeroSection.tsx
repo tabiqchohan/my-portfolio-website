@@ -33,18 +33,18 @@ export default function HeroSection() {
         >
           <AvailabilityBadge />
 
-          <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+          <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-white leading-tight">
             Hi, I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
               {siteConfig.name}
             </span>
           </h1>
 
-          <p className="mt-3 text-2xl sm:text-3xl font-semibold text-slate-700 dark:text-slate-300">
+          <p className="mt-3 text-2xl sm:text-3xl font-semibold text-stone-700 dark:text-stone-300">
             <TypingAnimation />
           </p>
 
-          <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
+          <p className="mt-4 text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
             {siteConfig.description}
           </p>
 
@@ -68,7 +68,7 @@ export default function HeroSection() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+                  className="p-2.5 rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200 dark:hover:bg-stone-800 transition-colors"
                   aria-label={link.name}
                 >
                   {iconMap[link.icon] || null}

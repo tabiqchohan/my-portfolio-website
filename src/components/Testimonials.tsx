@@ -13,8 +13,8 @@ export default function Testimonials() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white">What People Say</h2>
-        <p className="mt-2 text-slate-600 dark:text-slate-400">Feedback from clients and collaborators</p>
+        <h2 className="text-3xl font-bold text-stone-900 dark:text-white">What People Say</h2>
+        <p className="mt-2 text-stone-600 dark:text-stone-400">Feedback from clients and collaborators</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -25,19 +25,19 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="rounded-2xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 p-6 hover:shadow-lg hover:shadow-indigo-500/5 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-300"
+            className="rounded-2xl border border-stone-200 dark:border-stone-700/50 bg-white dark:bg-stone-900/80 p-6 hover:shadow-lg hover:shadow-indigo-500/5 hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-300"
           >
             <div className="flex gap-1 mb-4">
               {[1, 2, 3, 4, 5].map((star) => (
                 <FiStar key={star} className="fill-amber-400 text-amber-400" size={16} />
               ))}
             </div>
-            <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 italic">
+            <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-4 italic">
               &ldquo;{t.content}&rdquo;
             </p>
             <div>
-              <p className="font-semibold text-sm text-slate-900 dark:text-white">{t.name}</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">{t.role}</p>
+              <p className="font-semibold text-sm text-stone-900 dark:text-white">{t.name}</p>
+              <p className="text-xs text-stone-500 dark:text-stone-400">{t.role}</p>
             </div>
           </motion.div>
         ))}

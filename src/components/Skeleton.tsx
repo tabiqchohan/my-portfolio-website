@@ -1,14 +1,14 @@
 export default function Skeleton({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`animate-pulse rounded-lg bg-slate-200 dark:bg-slate-800 ${className}`}
+      className={`animate-pulse rounded-lg bg-stone-200 dark:bg-stone-800 ${className}`}
     />
   );
 }
 
 export function ProjectCardSkeleton() {
   return (
-    <div className="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-4">
+    <div className="rounded-2xl border border-stone-200 dark:border-stone-800 p-6 space-y-4">
       <Skeleton className="h-6 w-3/4" />
       <Skeleton className="h-4 w-full" />
       <Skeleton className="h-4 w-2/3" />

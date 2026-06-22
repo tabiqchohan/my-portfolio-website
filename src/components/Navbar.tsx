@@ -19,7 +19,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#0f1117]/80 border-b border-slate-200 dark:border-slate-800">
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#0a0a0b]/80 border-b border-stone-200 dark:border-stone-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
@@ -34,10 +34,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-slate-900 dark:hover:text-white ${
+                className={`text-sm font-medium transition-colors hover:text-stone-900 dark:hover:text-white ${
                   pathname === link.href
-                    ? "text-slate-900 dark:text-white"
-                    : "text-slate-500 dark:text-slate-400"
+                    ? "text-stone-900 dark:text-white"
+                    : "text-stone-500 dark:text-stone-400"
                 }`}
               >
                 {link.label}
@@ -50,7 +50,7 @@ export default function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800"
+              className="p-2 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <FiX size={20} /> : <FiMenu size={20} />}
@@ -60,7 +60,7 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0f1117]">
+        <div className="md:hidden border-t border-stone-200 dark:border-stone-800 bg-white dark:bg-[#0a0a0b]">
           <div className="px-4 py-3 space-y-2">
             {navLinks.map((link) => (
               <Link
@@ -69,8 +69,8 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white"
-                    : "text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50"
+                    ? "bg-stone-200 dark:bg-stone-800 text-stone-900 dark:text-white"
+                    : "text-stone-500 dark:text-stone-400 hover:bg-stone-200/50 dark:hover:bg-stone-800/50"
                 }`}
               >
                 {link.label}

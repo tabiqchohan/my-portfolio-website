@@ -9,14 +9,14 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <section className="relative z-10 bg-[#f0f2f5] dark:bg-[#151821]">
+      <section className="relative z-10 bg-[#ede7e0] dark:bg-[#121212]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+              <h2 className="text-3xl font-bold text-stone-900 dark:text-white">
                 Skills &amp; Technologies
               </h2>
-              <p className="mt-2 text-slate-600 dark:text-slate-400">
+              <p className="mt-2 text-stone-600 dark:text-stone-400">
                 Technologies I work with on a daily basis
               </p>
             </div>
@@ -30,14 +30,14 @@ export default function Home() {
 
       <Testimonials />
 
-      <section className="relative z-10 bg-[#f0f2f5] dark:bg-[#151821]">
+      <section className="relative z-10 bg-[#ede7e0] dark:bg-[#121212]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <ScrollReveal>
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+              <h2 className="text-3xl font-bold text-stone-900 dark:text-white">
                 Let&apos;s Work Together
               </h2>
-              <p className="mt-2 text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto">
+              <p className="mt-2 text-stone-600 dark:text-stone-400 mb-8 max-w-xl mx-auto">
                 Have a project in mind? Let&apos;s build something amazing
                 together.
               </p>

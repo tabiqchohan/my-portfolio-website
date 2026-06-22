@@ -19,7 +19,7 @@ const typeColors = {
 export default function Timeline() {
   return (
     <div className="relative">
-      <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-purple-500 to-transparent" />
+      <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-amber-500 via-purple-500 to-transparent" />
 
       <div className="space-y-8">
         {experiences.map((exp, index) => {
@@ -39,19 +39,19 @@ export default function Timeline() {
                 <Icon size={16} />
               </div>
 
-              <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700/50 rounded-xl p-5 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300">
+              <div className="bg-white dark:bg-stone-900/80 border border-stone-200 dark:border-stone-700/50 rounded-xl p-5 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                  <h3 className="font-semibold text-slate-900 dark:text-white">
+                  <h3 className="font-semibold text-stone-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400 shrink-0">
+                  <span className="text-xs text-stone-500 dark:text-stone-400 shrink-0">
                     {exp.startDate} — {exp.endDate}
                   </span>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+                <p className="text-sm text-stone-600 dark:text-stone-400 mb-2">
                   {exp.organization} &middot; {exp.location}
                 </p>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
                   {exp.description}
                 </p>
               </div>
