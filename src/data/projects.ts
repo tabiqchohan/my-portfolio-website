@@ -99,6 +99,49 @@ export const projects: Project[] = [
     liveUrl: "https://unit-converter-tabiqchohanxyz.streamlit.app",
     githubUrl: "https://github.com/tabiqchohan/Unit-Converter",
   },
+  {
+    id: "10",
+    title: "AI Employee FTE 24/7",
+    description:
+      "An AI-powered employee management system with intelligent task assignment, performance tracking, and automated workflows for round-the-clock operations.",
+    techStack: ["Python", "AI", "Automation"],
+    category: "fullstack",
+    featured: true,
+    liveUrl: "https://flowsync-frontend.onrender.com",
+    githubUrl: "https://github.com/tabiqchohan/hackathon5-AI-Employee-FTE-24-7",
+  },
+  {
+    id: "11",
+    title: "Physical Humanoid Robotics Book",
+    description:
+      "A web application focused on physical humanoid robotics concepts, documentation, and interactive learning resources.",
+    techStack: ["Python", "Web"],
+    category: "frontend",
+    featured: false,
+    liveUrl: "https://physical-humanoid-robotics-book.vercel.app",
+    githubUrl: "https://github.com/tabiqchohan/physical-humanoid-robotics-book",
+  },
+  {
+    id: "12",
+    title: "Hackathon 2 Phase 2",
+    description:
+      "A project developed during hackathon competition, featuring modern web technologies and interactive UI components.",
+    techStack: ["JavaScript", "HTML", "CSS"],
+    category: "frontend",
+    featured: false,
+    liveUrl: "https://hackathon2-phase2-tabiqchohan.vercel.app",
+    githubUrl: "https://github.com/tabiqchohan/hackathon2-phase2",
+  },
+  {
+    id: "13",
+    title: "Temp 03 API",
+    description:
+      "A RESTful API project demonstrating backend development with API endpoints, data handling, and server-side logic.",
+    techStack: ["API", "Backend"],
+    category: "backend",
+    featured: false,
+    liveUrl: "https://temp-03-api.vercel.app",
+  },
 ];
 
 export const projectCategories = [
