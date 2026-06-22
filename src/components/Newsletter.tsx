@@ -29,7 +29,7 @@ export default function Newsletter() {
         <form onSubmit={handleSubmit} className="flex gap-2">
           <input type="email" required value={email}
             onChange={(e) => setEmail(e.target.value)} placeholder="your@email.com"
-            className="flex-1 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200" />
+            className="flex-1 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200" />
           <button type="submit"
             className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white text-sm font-medium transition-all duration-200 shadow-md hover:shadow-lg">
             <FiSend size={16} />

@@ -13,8 +13,8 @@ export default function SkillBadge() {
             </h4>
             <div className="flex flex-wrap gap-2">
               {categorySkills.map((skill) => (
-                <span key={skill.name}
-                  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white/90 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                  <span key={skill.name}
+                    className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                   {skill.name}
                 </span>
               ))}

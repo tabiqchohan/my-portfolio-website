@@ -26,7 +26,7 @@ export default function ContactPage() {
 
         <ScrollReveal delay={0.2}>
           <div className="space-y-6">
-              <div className="rounded-2xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 p-6 space-y-4">
+              <div className="rounded-2xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 p-6 space-y-4">
               <h3 className="font-semibold text-slate-900 dark:text-white">
                 Contact Info
               </h3>

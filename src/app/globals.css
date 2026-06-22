@@ -8,12 +8,12 @@
 }
 
 :root {
-  --background: #eef1f6;
+  --background: #f8f9fb;
   --foreground: #1e293b;
 }
 
 .dark {
-  --background: #0a0f1e;
+  --background: #0f1117;
   --foreground: #e2e8f0;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .dark ::selection {
   background-color: #818cf8;
-  color: #0a0f1e;
+  color: #0f1117;
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +45,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 

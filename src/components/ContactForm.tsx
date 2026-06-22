@@ -34,14 +34,14 @@ export default function ContactForm() {
           <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
           <input id="name" type="text" required value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
+            className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
             placeholder="Your name" />
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email</label>
           <input id="email" type="email" required value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
+            className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
             placeholder="your@email.com" />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function ContactForm() {
         <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Subject</label>
         <input id="subject" type="text" required value={form.subject}
           onChange={(e) => setForm({ ...form, subject: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
+          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
           placeholder="What's this about?" />
       </div>
 
@@ -58,7 +58,7 @@ export default function ContactForm() {
         <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
         <textarea id="message" required rows={5} value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white/90 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200 resize-none"
+            className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700/50 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200 resize-none"
           placeholder="Your message..." />
       </div>
 

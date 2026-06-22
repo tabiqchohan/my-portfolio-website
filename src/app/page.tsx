@@ -9,26 +9,28 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <ScrollReveal>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-              Skills &amp; Technologies
-            </h2>
-            <p className="mt-2 text-slate-600 dark:text-slate-400">
-              Technologies I work with on a daily basis
-            </p>
-          </div>
-        </ScrollReveal>
+      <section className="relative z-10 bg-[#f0f2f5] dark:bg-[#151821]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                Skills &amp; Technologies
+              </h2>
+              <p className="mt-2 text-slate-600 dark:text-slate-400">
+                Technologies I work with on a daily basis
+              </p>
+            </div>
+          </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
-          <SkillBadge />
-        </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <SkillBadge />
+          </ScrollReveal>
+        </div>
       </section>
 
       <Testimonials />
 
-      <section className="relative z-10 border-t border-slate-200 dark:border-slate-800 bg-gradient-to-b from-transparent via-indigo-50/40 to-transparent dark:via-indigo-950/20">
+      <section className="relative z-10 bg-[#f0f2f5] dark:bg-[#151821]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <ScrollReveal>
             <div className="text-center">

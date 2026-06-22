@@ -39,7 +39,7 @@ export default function Timeline() {
                 <Icon size={16} />
               </div>
 
-              <div className="bg-white/90 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700/50 rounded-xl p-5 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300">
+              <div className="bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700/50 rounded-xl p-5 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                   <h3 className="font-semibold text-slate-900 dark:text-white">
                     {exp.title}
