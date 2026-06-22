@@ -18,7 +18,7 @@ export default function TypingAnimation() {
       wrapper="span"
       speed={50}
       repeat={Infinity}
-      className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+      className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400"
     />
   );
 }

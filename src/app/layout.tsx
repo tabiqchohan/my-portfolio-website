@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | Full Stack Developer",
+  title: "Tabiq Chohan | Full Stack Developer & Agentic AI Developer",
   description:
-    "Portfolio of Your Name — a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+    "Portfolio of Tabiq Chohan — a Full Stack Developer & Agentic AI Developer specializing in React, Next.js, Node.js, Python, and AI-powered applications.",
   openGraph: {
-    title: "Your Name | Full Stack Developer",
+    title: "Tabiq Chohan | Full Stack Developer",
     description:
-      "Portfolio of Your Name — a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+      "Portfolio of Tabiq Chohan — a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     type: "website",
     locale: "en_US",
   },
@@ -41,7 +41,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
+      <body className="min-h-full flex flex-col bg-[#faf9f6] dark:bg-[#0c0e12] text-stone-900 dark:text-stone-100">
         <Providers>
           <AnimatedBackground />
           <Navbar />

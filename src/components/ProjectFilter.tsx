@@ -21,10 +21,10 @@ export default function ProjectFilter({
           onClick={() => onSelect(cat.id)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
             active === cat.id
-              ? "bg-zinc-900 dark:bg-white text-white dark:text-zinc-900"
-              : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+              ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+              : "bg-white/80 dark:bg-white/[0.04] text-stone-600 dark:text-stone-400 border border-stone-200 dark:border-stone-800 hover:border-indigo-300 dark:hover:border-indigo-700"
           }`}
         >
           {cat.label}

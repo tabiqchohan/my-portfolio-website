@@ -46,7 +46,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+            className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1"
           >
             Name
           </label>
@@ -56,14 +56,14 @@ export default function ContactForm() {
             required
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-white transition-colors"
+            className="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
             placeholder="Your name"
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+            className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1"
           >
             Email
           </label>
@@ -73,7 +73,7 @@ export default function ContactForm() {
             required
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-white transition-colors"
+            className="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
             placeholder="your@email.com"
           />
         </div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="subject"
-          className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+          className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1"
         >
           Subject
         </label>
@@ -92,7 +92,7 @@ export default function ContactForm() {
           required
           value={form.subject}
           onChange={(e) => setForm({ ...form, subject: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-white transition-colors"
+          className="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200"
           placeholder="What's this about?"
         />
       </div>
@@ -100,7 +100,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+          className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1"
         >
           Message
         </label>
@@ -110,7 +110,7 @@ export default function ContactForm() {
           rows={5}
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:focus:ring-white transition-colors resize-none"
+          className="w-full px-4 py-2.5 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] text-stone-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-all duration-200 resize-none"
           placeholder="Your message..."
         />
       </div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-md hover:shadow-lg"
       >
         {status === "sending" ? (
           "Sending..."
@@ -131,9 +131,9 @@ export default function ContactForm() {
       </button>
 
       {status === "success" && (
-        <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-sm">
+        <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-sm">
           <FiCheck size={16} />
-          Message sent successfully! I'll get back to you soon.
+          Message sent successfully! I&apos;ll get back to you soon.
         </div>
       )}
 

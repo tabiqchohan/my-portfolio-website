@@ -8,10 +8,10 @@ export default function AboutPage() {
     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <ScrollReveal>
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-4xl font-bold text-zinc-900 dark:text-white">
+          <h1 className="text-4xl font-bold text-stone-900 dark:text-white">
             About Me
           </h1>
-          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <p className="mt-4 text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
             I&apos;m a passionate {siteConfig.role} based in{" "}
             {siteConfig.location}. Currently studying at GIAIC (Governor
             Initiative for AI Computing) and founder of{" "}
@@ -19,7 +19,7 @@ export default function AboutPage() {
               href={siteConfig.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-blue-600 dark:text-blue-400 hover:underline"
+              className="font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
             >
               FreelancifyHub
             </a>
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <a
             href={siteConfig.resumeUrl}
             download
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium transition-all duration-200 shadow-md hover:shadow-lg"
           >
             <FiDownload size={18} />
             Download Resume
@@ -41,7 +41,7 @@ export default function AboutPage() {
 
       <ScrollReveal delay={0.2}>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-8 text-center">
+          <h2 className="text-2xl font-bold text-stone-900 dark:text-white mb-8 text-center">
             Experience &amp; Education
           </h2>
           <Timeline />

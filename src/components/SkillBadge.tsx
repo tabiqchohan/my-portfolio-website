@@ -12,14 +12,14 @@ export default function SkillBadge() {
           if (categorySkills.length === 0) return null;
           return (
             <div key={category.id}>
-              <h4 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">
+              <h4 className="text-sm font-semibold text-stone-500 dark:text-stone-400 uppercase tracking-wider mb-3">
                 {category.label}
               </h4>
               <div className="flex flex-wrap gap-2">
                 {categorySkills.map((skill) => (
                   <span
                     key={skill.name}
-                    className="px-3 py-1.5 rounded-lg text-sm font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700"
+                    className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white/80 dark:bg-white/[0.04] text-stone-700 dark:text-stone-300 border border-stone-200 dark:border-stone-800 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                   >
                     {skill.name}
                   </span>

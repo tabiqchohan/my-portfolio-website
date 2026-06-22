@@ -19,12 +19,12 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-zinc-900/70 border-b border-zinc-200 dark:border-zinc-800">
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-[#faf9f6]/80 dark:bg-[#0c0e12]/80 border-b border-stone-200 dark:border-stone-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-xl font-bold text-zinc-900 dark:text-white"
+            className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent"
           >
             {siteConfig.name}
           </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div className="md:hidden border-t border-stone-200 dark:border-stone-800 bg-[#faf9f6] dark:bg-[#0c0e12]">
           <div className="px-4 py-3 space-y-2">
             {navLinks.map((link) => (
               <Link

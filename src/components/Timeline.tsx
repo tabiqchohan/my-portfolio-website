@@ -6,7 +6,6 @@ import {
   FiBookOpen,
   FiAward,
 } from "react-icons/fi";
-import { Experience } from "@/types";
 import { experiences } from "@/data/experience";
 
 const typeIcons = {
@@ -16,17 +15,17 @@ const typeIcons = {
 };
 
 const typeColors = {
-  work: "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+  work: "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400",
   education:
-    "bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400",
+    "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400",
   certification:
-    "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
+    "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400",
 };
 
 export default function Timeline() {
   return (
     <div className="relative">
-      <div className="absolute left-6 top-0 bottom-0 w-px bg-zinc-200 dark:bg-zinc-800" />
+      <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-purple-500 to-transparent" />
 
       <div className="space-y-8">
         {experiences.map((exp, index) => {
@@ -41,24 +40,24 @@ export default function Timeline() {
               className="relative pl-16"
             >
               <div
-                className={`absolute left-3 p-2 rounded-full ${typeColors[exp.type]}`}
+                className={`absolute left-3 p-2.5 rounded-full shadow-md ${typeColors[exp.type]}`}
               >
                 <Icon size={16} />
               </div>
 
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 hover:shadow-md transition-shadow">
+              <div className="bg-white/80 dark:bg-white/[0.04] border border-stone-200 dark:border-stone-800 rounded-xl p-5 hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                  <h3 className="font-semibold text-zinc-900 dark:text-white">
+                  <h3 className="font-semibold text-stone-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <span className="text-xs text-zinc-500 dark:text-zinc-400 shrink-0">
+                  <span className="text-xs text-stone-500 dark:text-stone-400 shrink-0">
                     {exp.startDate} — {exp.endDate}
                   </span>
                 </div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">
+                <p className="text-sm text-stone-600 dark:text-stone-400 mb-2">
                   {exp.organization} &middot; {exp.location}
                 </p>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
                   {exp.description}
                 </p>
               </div>

@@ -14,7 +14,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
+    <footer className="border-t border-stone-200 dark:border-stone-800 bg-gradient-to-b from-transparent to-stone-100 dark:to-stone-900/50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">

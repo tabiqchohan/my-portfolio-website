@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { testimonials } from "@/data/testimonials";
 import { FiStar } from "react-icons/fi";
+import { testimonials } from "@/data/testimonials";
 
 export default function Testimonials() {
   return (
@@ -13,10 +13,10 @@ export default function Testimonials() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">
+        <h2 className="text-3xl font-bold text-stone-900 dark:text-white">
           What People Say
         </h2>
-        <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-2 text-stone-600 dark:text-stone-400">
           Feedback from clients and collaborators
         </p>
       </motion.div>
@@ -29,27 +29,27 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 hover:shadow-lg transition-shadow"
+            className="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white/80 dark:bg-white/[0.04] p-6 hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-200 dark:hover:border-indigo-800 transition-all duration-300"
           >
             <div className="flex gap-1 mb-4">
               {[1, 2, 3, 4, 5].map((star) => (
                 <FiStar
                   key={star}
-                  className="fill-yellow-400 text-yellow-400"
+                  className="fill-amber-400 text-amber-400"
                   size={16}
                 />
               ))}
             </div>
 
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4 italic">
+            <p className="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-4 italic">
               &ldquo;{t.content}&rdquo;
             </p>
 
             <div>
-              <p className="font-semibold text-sm text-zinc-900 dark:text-white">
+              <p className="font-semibold text-sm text-stone-900 dark:text-white">
                 {t.name}
               </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              <p className="text-xs text-stone-500 dark:text-stone-400">
                 {t.role}
               </p>
             </div>

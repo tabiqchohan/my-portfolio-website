@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectFilter from "@/components/ProjectFilter";
 import ScrollReveal from "@/components/ScrollReveal";
 import { projects, projectCategories } from "@/data/projects";
 import { ProjectCardSkeleton } from "@/components/Skeleton";
-import { useEffect } from "react";
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -27,10 +26,10 @@ export default function ProjectsPage() {
     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <ScrollReveal>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-zinc-900 dark:text-white">
+          <h1 className="text-4xl font-bold text-stone-900 dark:text-white">
             My Projects
           </h1>
-          <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-stone-600 dark:text-stone-400">
             A collection of projects I&apos;ve built and contributed to
           </p>
         </div>
@@ -62,7 +61,7 @@ export default function ProjectsPage() {
 
       {filtered.length === 0 && !loading && (
         <div className="text-center py-20">
-          <p className="text-zinc-500 dark:text-zinc-400">
+          <p className="text-stone-500 dark:text-stone-400">
             No projects found in this category.
           </p>
         </div>
