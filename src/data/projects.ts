@@ -30,7 +30,7 @@ export const projects: Project[] = [
     techStack: ["HTML", "CSS", "JavaScript"],
     category: "fullstack",
     featured: false,
-    liveUrl: "https://user-managment-system-wine.vercel.app",
+    liveUrl: "https://user-managment-system-tabiqchohan.vercel.app",
     githubUrl: "https://github.com/tabiqchohan/user-managment-system",
   },
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     techStack: ["JavaScript", "HTML", "CSS"],
     category: "frontend",
     featured: false,
-    liveUrl: "https://finance-tracker-snowy-seven.vercel.app",
+    liveUrl: "https://finance-tracker-tabiqchohan.vercel.app",
     githubUrl: "https://github.com/tabiqchohan/finance-tracker",
   },
   {
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     techStack: ["HTML", "CSS"],
     category: "frontend",
     featured: false,
-    liveUrl: "https://space-x-home-page.vercel.app",
+    liveUrl: "https://space-x-homepage-tabiqchohan.vercel.app",
     githubUrl: "https://github.com/tabiqchohan/spaceX-home-page",
   },
   {
